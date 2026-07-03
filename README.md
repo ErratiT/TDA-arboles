@@ -33,11 +33,11 @@ struct Nodo{
 _Es aquel que dado un nodo, todos los datos del subárbol izquierdo son menores, mientras que los datos del subárbol derecho son mayores._
 
 ### Operaciones en Árboles binarios de Búsqueda
-**Insertar un nodo en el árbol.**
-**Mostrar el árbol completo.**
-**Buscar un nodo específico.**
-**Recorrer el árbol.**
-_Preorden._
-_Inorden._
-_Postorden._
-**Borrar un nodo del árbol.**
+**Insertar un nodo en el árbol.**  
+**Mostrar el árbol completo.**  
+**Buscar un nodo específico.**  
+**Recorrer el árbol.**  
+_Preorden._  
+_Inorden._  
+_Postorden._  
+**Borrar un nodo del árbol.**  
