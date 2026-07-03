@@ -14,3 +14,30 @@ _Es una estructura recursiva, se divide en tres subconjuntos disjuntos:_
 **- Nodo Raíz**  
 **- Subárbol izquierdo**  
 **- Subárbol derecho**  
+
+### Tipos de Árboles Binarios
+**Árbol lleno:** _Todos sus nodos, excepto los del último nivel, tienen 2 hijos._  
+**Árbol completo:** _Todos sus nodos están llenos, excepto posiblemente el último nivel, el cual se llena estrictamente de izquierda a derecha._  
+**Árbol degenerado:** _Tiene 1 solo hijo (extendido), podría ser una lista enlazada._
+
+### Estructura de un Árbol Binario
+```
+struct Nodo{  
+  int dato;
+  nodo *der;
+  nodo *izq
+};
+```
+
+### ¿Qué es un Árbol Binario de Búsqueda?
+_Es aquel que dado un nodo, todos los datos del subárbol izquierdo son menores, mientras que los datos del subárbol derecho son mayores._
+
+### Operaciones en Árboles binarios de Búsqueda
+**Insertar un nodo en el árbol.**
+**Mostrar el árbol completo.**
+**Buscar un nodo específico.**
+**Recorrer el árbol.**
+_Preorden._
+_Inorden._
+_Postorden._
+**Borrar un nodo del árbol.**
