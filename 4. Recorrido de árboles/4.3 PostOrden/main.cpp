@@ -1,9 +1,9 @@
-/*4.2 Práctica: Recorrido en InOrden:
-(izquierdo, raíz, derecho). Para recorrer un árbol binario no vacío en InOrden, hay que realizar las siguientes
+/*4.3 Práctica: Recorrido en PostOrden:
+(izquierdo, derecho, raíz). Para recorrer un árbol binario no vacío PostOrden, hay que realizar las siguientes
 operaciones recursivamente en cada nodo:
 - Atraviese el sub-árbol izquierdo.
-- Visite la raíz.
 - Atraviese el sub-árbol derecho.
+- Visite la raíz.
 */
 
 #include <iostream>
@@ -77,7 +77,6 @@ void preOrden(Nodo *arbol){
 	}
 }
 
-//Definimos la función InOrden (para recorrido en profundidad)
 void InOrden(Nodo *arbol){
 	if (arbol == NULL){
 		return;
@@ -85,6 +84,17 @@ void InOrden(Nodo *arbol){
 		InOrden(arbol->izq);
 		cout << arbol->dato<<" - ";
 		InOrden(arbol->der);
+	}
+}
+
+//Definimos la función PostOrden (recorrido en profundidad).
+void PostOrden(Nodo *arbol){
+	if (arbol == NULL){
+		return;
+	} else {
+		PostOrden(arbol->izq);
+		PostOrden(arbol->der);
+		cout << arbol->dato<<" - ";
 	}
 }
 
@@ -97,7 +107,8 @@ void menu(){
 		cout << "3. Buscar un elemento en el arbol" << endl;
 		cout << "4. Recorrer el arbol en PreOrden" << endl;
 		cout << "5. Recorrer el arbol en InOrden" << endl;
-		cout << "6. Salir" << endl;
+		cout << "6. Recorrer el arbol en PostOrden" << endl;
+		cout << "7. Salir" << endl;
 		cout << "Opcion: ";
 		cin >> opcion;
 		
@@ -132,8 +143,13 @@ void menu(){
 			cout<<endl;
 			system("pause");
 			break;
+			case 6: cout << "Recorrido en PostOrden: ";
+			PostOrden(arbol);
+			cout<<endl;
+			system("pause");
+			break;
 		}
-	} while (opcion != 6);
+	} while (opcion != 7);
 }
 
 int main(){
