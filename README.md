@@ -41,3 +41,19 @@ _Preorden._
 _Inorden._  
 _Postorden._  
 **Borrar un nodo del árbol.**  
+
+### Ejemplo de Árboles en:
+## Lo cotidiano
+**Organigrama Empresarial:** _el organigrama de una empresa es un buen ejemplo de arboles, ya que inicia desde el director general (raiz), va pasando por los directores de los departamentos. Los cuales a su vez tienen empleados a su cargo (nodos padres / hijos) y acaba en los empleados o puestos sin personal bajo su mando (hojas)_
+
+## lo informatico
+**comentarios:** _en una seccion de comentarios de una publicacion usualmente se genera un arbol general, donde la raiz es la publicacion original, las ramas son los comentarios y las hojas serian las respuestas a esos comentarios_
+**operaciones matematicas:** _todas las calculadoras y dispositivos para evitar errores en las operaciones usan un tipo de arbol binario conocido como los arboles de expresiones. En el caso de la operacion 3+5*4 lo distribuye de la siguiente manera:_
+```
+        [ + ]         <-- Raíz (Operación final)
+       /     \
+    [ 3 ]   [ * ]     <-- El '+' espera el resultado de '3' y del subárbol derecho
+           /     \
+        [ 5 ]   [ 4 ] <-- Las hojas son los números
+```
+_una vez realizado el arbol, el dispositivo usa el recorrido postorden donde primero realiza la multiplicacion, para despues el resultado sumarlo con el 3, cumpliendo asi el orden de precedencia de signos_
