@@ -24,8 +24,9 @@ _Es una estructura recursiva, se divide en tres subconjuntos disjuntos:_
 ```
 struct Nodo{  
   int dato;
-  nodo *der;
-  nodo *izq
+  Nodo *der;
+  Nodo *izq;
+  Nodo *padre;
 };
 ```
 
